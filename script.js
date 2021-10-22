@@ -23,8 +23,18 @@ class Ball {
   }
 }
 
+var ball1;
 
-function draw() {
-  background(225);
+function setup() {
+  createCanvas(500, 400);
 
- 
+  ball1 = new Ball(30, 200, 50, 50, 5, 5);
+}
+
+
+  function draw() {
+    background(225);
+
+    ball1.draw();
+  }
+
