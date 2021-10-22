@@ -1,19 +1,14 @@
-var x, y, vx, vy;
-var x2, y2, vx2, vy2;
+class Ball {
+  constructor(x, y, w, h, vx, vy) {
+    this.x = x;
+    this.y = y;
+    this.width = w;
+    this.height = h;
+    this.vx = vx;
+    this.vy = vy;
+  }
 
-function setup() {
-  createCanvas(400, 300);
-
-  x = 0;
-  y = 150;
-  vx = 6;
-  vy = 6;
-  x2 = 0
-  y2 = 200
-  vx2 = 5
-  vy2 = 5
-}
-
+  
 function draw() {
   background(225);
 
